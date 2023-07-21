@@ -12,7 +12,8 @@ local function dbg_ln(string)
   terminal.setTextColor(colors.lightGray)
   terminal.write(string)
 
-  terminal.scroll(1)
+  local c_x, c_y = terminal.getCursorPos()
+  terminal.setCursorPos(0, c_y + 1)
   terminal.setTextColor(initial_color)
 end
 
