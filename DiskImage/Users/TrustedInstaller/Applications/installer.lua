@@ -10,7 +10,7 @@ local terminal = _G.term
 local function dbg_ln(string)
   local initial_color = terminal.getTextColor()
   terminal.setTextColor(colors.lightGray)
-  terminal.write("[Rubikon]:" + string)
+  terminal.write('[Rubikon]:' .. string .. '\n')
 
   local c_x, c_y = terminal.getCursorPos()
   terminal.setCursorPos(0, c_y + 1)
@@ -43,4 +43,4 @@ end
 
 terminal.clear() -- Initialize Terminal.
 
-dbg_ln("test")
+dbg_ln('test')
