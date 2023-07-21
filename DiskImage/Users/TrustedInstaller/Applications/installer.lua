@@ -8,4 +8,4 @@ local os        = _G.os
 local terminal = _G.term
 
 terminal.setBackgroundColor(colors.blue)
-os.system("screenfetch")
+
