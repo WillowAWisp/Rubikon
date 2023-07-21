@@ -14,6 +14,7 @@ local function dbg_ln(string)
 
   local c_x, c_y = terminal.getCursorPos()
   terminal.setCursorPos(0, c_y + 1)
+  print()
   terminal.setTextColor(initial_color)
 end
 
