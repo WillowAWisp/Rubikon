@@ -10,7 +10,9 @@ local terminal = _G.term
 local function dbg_ln(string)
   local initial_color = terminal.getTextColor()
   terminal.setTextColor(colors.lightGray)
-  terminal.write(string + '\n')
+  terminal.write(string)
+
+  terminal.scroll(1)
   terminal.setTextColor(initial_color)
 end
 
