@@ -1,4 +1,4 @@
-print('[Rubikon]: Running Installer...')
+-- print('[Rubikon]: Running Installer...')
 
 local colors    = _G.colors
 local fs        = _G.fs
