@@ -3,7 +3,7 @@ local fs        = _G.fs
 local http      = _G.http
 local install   = _ENV.install
 local os        = _G.os
-local terminal = _G.term
+local terminal  = _G.term
 
 -- dbg
 
