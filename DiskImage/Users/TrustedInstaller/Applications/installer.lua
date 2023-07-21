@@ -1,4 +1,4 @@
--- print('[Rubikon]: Running Installer...')
+print('[Rubikon]: Running Installer...')
 
 local colors    = _G.colors
 local fs        = _G.fs
@@ -8,4 +8,4 @@ local os        = _G.os
 local terminal = _G.term
 
 terminal.setBackgroundColor(colors.blue)
-os.reboot()
+os.system("screenfetch")
