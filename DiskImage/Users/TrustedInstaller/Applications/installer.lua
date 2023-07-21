@@ -1,5 +1,3 @@
-print('[Rubikon]: Running Installer...')
-
 local colors    = _G.colors
 local fs        = _G.fs
 local http      = _G.http
@@ -7,5 +5,39 @@ local install   = _ENV.install
 local os        = _G.os
 local terminal = _G.term
 
-terminal.clear()
+-- dbg
 
+local function dbg_ln(string)
+  local initial_color = terminal.getTextColor()
+  terminal.setTextColor(colors.lightGray)
+  terminal.write(string)
+  terminal.setTextColor(initial_color)
+end
+
+local function dbg(string)
+
+end
+
+-- warn
+
+local function warn_ln(string)
+
+end
+
+local function warn(string)
+
+end
+
+-- err
+
+local function err_ln(string)
+
+end
+
+local function err(string)
+
+end
+
+terminal.clear() -- Initialize Terminal.
+
+dbg_ln("test")
