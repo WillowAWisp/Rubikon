@@ -1,7 +1,5 @@
 print('[Rubikon]: Running Installer...')
 
-sleep()
-
 local colors    = _G.colors
 local fs        = _G.fs
 local http      = _G.http
