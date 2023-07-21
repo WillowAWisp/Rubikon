@@ -15,7 +15,6 @@ local function dbg_ln(string)
   local c_x, c_y = terminal.getCursorPos()
   terminal.setCursorPos(0, c_y + 1)
   terminal.setTextColor(initial_color)
-  terminal.setCursorBlink(false)
 end
 
 local function dbg(string)
@@ -42,6 +41,13 @@ local function err(string)
 
 end
 
-terminal.clear() -- Initialize Terminal.
+-- Initialize Terminal.
+
+terminal.clear()
+terminal.setCursorBlink(false)
 
 dbg_ln('test')
+
+-- Finalize Terminal.
+
+terminal.setCursorBlink(true)
